@@ -1,19 +1,16 @@
 import { StyleSheet, Text, View } from 'react-native'
-import {Slot, Stack} from 'expo-router'
+import React from 'react'
+import {Link} from 'expo-router'
 
-const RootLayout = () => {
+const profile = () => {
   return (
-    <Stack>
-      <Stack.Screen name="index" options={{headerShown: false}} />
-      
-
-
-    </Stack>
+    <View style = {styles.container}>
+      <Text>profile</Text>
+    </View>
   )
-
 }
 
-export default RootLayout
+export default profile
 
 const styles = StyleSheet.create({
   container:{
@@ -21,6 +18,5 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-
   }
 })
